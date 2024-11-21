@@ -85,7 +85,6 @@ void livro_exibe(pLivro livros, int qtde){
         printf("Preço: %.2f\n",livros[i].preco);
         printf("Score: %d\n",livros[i].score);
         printf("Editora: %s\n",livros[i].editora);
-        
     }
 }
 
