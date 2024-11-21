@@ -70,8 +70,9 @@ void livro_ler(pLivro livros, int qtde){
 
         //editora
         fgets(holder,100,stdin);
-        holder[strcspn(holder, "\n")] = '\0';
+        //holder[strcspn(holder, "\n")] = '\0';
         strcpy(livros[i].editora,holder);
+        
     }
 }
 
@@ -83,7 +84,7 @@ void livro_exibe(pLivro livros, int qtde){
         printf("ISBN: %s\n",livros[i].isbn);
         printf("Preço: %.2f\n",livros[i].preco);
         printf("Score: %d\n",livros[i].score);
-        printf("Editora: %s\n\n",livros[i].editora);
+        printf("Editora: %s\n",livros[i].editora);
         
     }
 }
