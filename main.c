@@ -25,6 +25,10 @@ int main(){
     scanf("%d",&qtde);
     getchar();
 
+    if(qtde == 0){
+        printf("Sem livros");
+    }
+
     pLivro arrayLivros;
 
     arrayLivros = livro_aloc(qtde);
