@@ -62,12 +62,12 @@ void livro_ler(pLivro livros, int qtde){
 
         //preço
         scanf("%f",&livros[i].preco);
-        fflush(stdin);
+        getchar();
 
         //score
         scanf("%d",&livros[i].score);
-        fflush(stdin);
-
+        getchar();
+        
         //editora
         fgets(holder,100,stdin);
         //holder[strcspn(holder, "\n")] = '\0';
